@@ -18,6 +18,10 @@ ReactDOM.render(
             alt="hotwire"
             src="https://ak-secure.hotwirestatic.com/current/static/images/branding/hw-logos/hotwire-logo.svg"
           />
+          <span className="floatRight hotelName">
+            {" "}
+            <b>Hi Marriot Group !</b>
+          </span>
         </div>
       </nav>
     </div>

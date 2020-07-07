@@ -78,27 +78,37 @@ export default function App() {
           delay={300}
           onError={handleError}
           onScan={handleScan}
-          style={{ width: "100%" }}
+          style={{ width: "320px", margin: "auto" }}
         />
       </React.Fragment>
     );
   };
+
+  const travellers =
+    result &&
+    result.travellers.map((item, index) => {
+      return (
+        <React.Fragment>
+          <tr>
+            <td>Traveller Name</td>
+            <td>{item.travellerName}</td>
+          </tr>
+          <tr>
+            <td>Traveller Document</td>
+            <td>
+              <img alt="passport" src={item.documentLink} />
+            </td>
+          </tr>
+        </React.Fragment>
+      );
+    });
 
   const rendertable = () => {
     return (
       <React.Fragment>
         <table id="checkinInfo">
           <tbody>
-            <tr>
-              <td>Traveller Name</td>
-              <td>{result.travellers[0].travellerName}</td>
-            </tr>
-            <tr>
-              <td>Traveller Document</td>
-              <td>
-                <img alt="passport" src={result.travellers[0].documentLink} />
-              </td>
-            </tr>
+            {travellers}
             <tr>
               <td>Hotwire Itinerary</td>
               <td>{result.hotwireItinerary}</td>
@@ -113,22 +123,30 @@ export default function App() {
             </tr>
           </tbody>
         </table>
-        ;
       </React.Fragment>
     );
   };
 
   return (
     <div>
-      {!showQRScanner && <button onClick={showQRScan}>Scan QR code</button>}
-      {showQRScanner && !result.travellers && renderScan()}
-      {result.travellers && <button onClick={checkIn}>CheckIn</button>}
-      {result.travellers && (
-        <button className="secondary" onClick={goBack}>
-          Go Back
-        </button>
-      )}
-      {result.travellers && rendertable()}
+      <div className="main">
+        {!showQRScanner && <h1>Hotwire Contactless Checkin</h1>}
+        {!showQRScanner && <button onClick={showQRScan}>Scan QR code</button>}
+
+        {showQRScanner && !result.travellers && (
+          <h1>Scan your travel QR code here:</h1>
+        )}
+        {showQRScanner && !result.travellers && renderScan()}
+      </div>
+      <div className="details">
+        {result.travellers && <button onClick={checkIn}>CheckIn</button>}
+        {result.travellers && (
+          <button className="secondary floatRight" onClick={goBack}>
+            Go Back
+          </button>
+        )}
+        {result.travellers && rendertable()}
+      </div>
     </div>
   );
 }
