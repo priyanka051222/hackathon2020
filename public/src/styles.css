@@ -21,6 +21,7 @@ h1 {
 
 #qr-canvas {
   margin: auto;
+  max-width: 400px;
   width: 100%;
 }
 
