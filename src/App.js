@@ -84,21 +84,31 @@ export default function App() {
     );
   };
 
+  const travellers =
+    result &&
+    result.travellers.map((item, index) => {
+      return (
+        <React.Fragment>
+          <tr>
+            <td>Traveller Name</td>
+            <td>{item.travellerName}</td>
+          </tr>
+          <tr>
+            <td>Traveller Document</td>
+            <td>
+              <img alt="passport" src={item.documentLink} />
+            </td>
+          </tr>
+        </React.Fragment>
+      );
+    });
+
   const rendertable = () => {
     return (
       <React.Fragment>
         <table id="checkinInfo">
           <tbody>
-            <tr>
-              <td>Traveller Name</td>
-              <td>{result.travellers[0].travellerName}</td>
-            </tr>
-            <tr>
-              <td>Traveller Document</td>
-              <td>
-                <img alt="passport" src={result.travellers[0].documentLink} />
-              </td>
-            </tr>
+            {travellers}
             <tr>
               <td>Hotwire Itinerary</td>
               <td>{result.hotwireItinerary}</td>
