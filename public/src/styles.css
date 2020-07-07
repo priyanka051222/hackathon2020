@@ -15,6 +15,7 @@ h1 {
 }
 
 #container {
+  flex-direction: column;
   text-align: center;
   margin: 0;
   display: flex;
