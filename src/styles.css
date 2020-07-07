@@ -95,7 +95,8 @@
 button {
   margin: 10px 0;
   padding: 10px;
-  background: red;
+  background: #db3939;
+  color: #ffffff;
   border: none;
   border-radius: 3px;
 }
