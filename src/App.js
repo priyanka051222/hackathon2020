@@ -65,6 +65,12 @@ export default function App() {
     setResult("");
   };
 
+  const checkIn = () => {
+    alert("Successfully Checkin");
+    setShowQRScanner(false);
+    setResult("");
+  };
+
   const renderScan = () => {
     return (
       <React.Fragment>
@@ -116,7 +122,7 @@ export default function App() {
     <div>
       {!showQRScanner && <button onClick={showQRScan}>Scan QR code</button>}
       {showQRScanner && !result.travellers && renderScan()}
-      {result.travellers && <button onClick={showQRScan}>CheckIn</button>}
+      {result.travellers && <button onClick={checkIn}>CheckIn</button>}
       {result.travellers && (
         <button className="secondary" onClick={goBack}>
           Go Back
