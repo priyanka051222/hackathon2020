@@ -1,3 +1,95 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: sans-serif;
+  padding: 0 10px;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 15px;
+}
+
+#container {
+  text-align: center;
+  margin: 0;
+}
+
+#qr-canvas {
+  margin: auto;
+  width: 100%;
+}
+
+#btn-scan-qr {
+  cursor: pointer;
+}
+
+#btn-scan-qr img {
+  height: 10em;
+  padding: 15px;
+  margin: 15px;
+  background: white;
+}
+
+#qr-result {
+  font-size: 1.2em;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  background-color: white;
+}
+
+.hw-logo {
+  width: 15%;
+  height: 40px;
+  margin: 10px;
+}
+
+.hw-header nav.navbar {
+  min-height: 57px;
+  margin-bottom: 0;
+  padding: 0 16px;
+  z-index: 120;
+  position: relative;
+  border: 1px solid transparent;
+  border-bottom-color: #bfc4ce;
+  background-color: #fff;
+}
+
+.hw-header nav.navbar .container-fluid {
+  padding: 0;
+}
+
+.hw-header nav.navbar .container-fluid .navbar-brand {
+  width: 116px;
+  text-indent: -200px;
+  overflow: hidden;
+  padding: 0;
+  font-size: 20px;
+  margin: 0 12px 0 0;
+  text-transform: none;
+  height: 54px;
+  background-position-y: center;
+}
+
+@media (max-width: 767px) {
+  .hw-header nav.navbar {
+    padding: 0 16px 0 8px;
+  }
+
+  .hw-header nav.navbar .container-fluid {
+    padding-left: 8px;
+  }
+
+  .hw-header nav.navbar .container-fluid .navbar-brand {
+    width: 87px;
+    background-size: 87px 18px;
+    background-position: 0;
+    margin: 0;
+    height: 54px;
+  }
 }
