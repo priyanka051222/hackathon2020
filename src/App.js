@@ -113,22 +113,30 @@ export default function App() {
             </tr>
           </tbody>
         </table>
-        ;
       </React.Fragment>
     );
   };
 
   return (
     <div>
-      {!showQRScanner && <button onClick={showQRScan}>Scan QR code</button>}
-      {showQRScanner && !result.travellers && renderScan()}
-      {result.travellers && <button onClick={checkIn}>CheckIn</button>}
-      {result.travellers && (
-        <button className="secondary" onClick={goBack}>
-          Go Back
-        </button>
-      )}
-      {result.travellers && rendertable()}
+      <div className="main">
+        {!showQRScanner && <h1>Hotwire QR Code Scanner</h1>}
+        {!showQRScanner && <button onClick={showQRScan}>Scan QR code</button>}
+
+        {showQRScanner && !result.travellers && (
+          <h1>Scan your travel QR code here:</h1>
+        )}
+        {showQRScanner && !result.travellers && renderScan()}
+      </div>
+      <div className="details">
+        {result.travellers && <button onClick={checkIn}>CheckIn</button>}
+        {result.travellers && (
+          <button className="secondary floatRight" onClick={goBack}>
+            Go Back
+          </button>
+        )}
+        {result.travellers && rendertable()}
+      </div>
     </div>
   );
 }
