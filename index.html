@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <div id="container">
+      <h1>Hotwire QR Code Scanner</h1>
+      <a id="btn-scan-qr">
+        <img
+          src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg"
+        />
+      </a>
+      <canvas
+        hidden=""
+        id="qrCanvas"
+        style="
+			width: 100%;
+		"
+      ></canvas>
+      <div id="qr-result" hidden="">
+        <b>Data:</b> <span id="outputData"></span>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="src/qrCodeScanner.js"></script>
+  </body>
+</html>
