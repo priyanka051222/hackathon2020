@@ -21,7 +21,7 @@ h1 {
   display: flex;
 }
 
-#qr-canvas {
+#qrCanvas{
   margin: auto;
   width: 50%;
 }

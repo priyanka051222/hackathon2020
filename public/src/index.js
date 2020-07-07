@@ -1,5 +1,3 @@
-import "./styles.css";
-
 document.getElementById("app").innerHTML = `
 <div class="hw-header site-header--wrapper">
 <nav class="navbar navbar-default" role="navigation" data-module="nav-tabs">
