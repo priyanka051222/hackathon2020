@@ -19,174 +19,222 @@
 16 silly loadShrinkwrap Finishing
 17 silly loadAllDepsIntoIdealTree Starting
 18 silly install loadAllDepsIntoIdealTree
-19 silly fetchNamedPackageData @babel/core
-20 silly mapToRegistry name @babel/core
-21 silly mapToRegistry scope (from package name) @babel
-22 verbose mapToRegistry no registry URL found in name for scope @babel
-23 silly mapToRegistry using default registry
-24 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
-25 silly mapToRegistry data Result {
-25 silly mapToRegistry   raw: '@babel/core',
-25 silly mapToRegistry   scope: '@babel',
-25 silly mapToRegistry   escapedName: '@babel%2fcore',
-25 silly mapToRegistry   name: '@babel/core',
-25 silly mapToRegistry   rawSpec: '',
-25 silly mapToRegistry   spec: 'latest',
-25 silly mapToRegistry   type: 'tag' }
-26 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore
-27 silly fetchNamedPackageData parcel-bundler
-28 silly mapToRegistry name parcel-bundler
-29 silly mapToRegistry using default registry
-30 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
-31 silly mapToRegistry data Result {
-31 silly mapToRegistry   raw: 'parcel-bundler',
-31 silly mapToRegistry   scope: null,
-31 silly mapToRegistry   escapedName: 'parcel-bundler',
-31 silly mapToRegistry   name: 'parcel-bundler',
-31 silly mapToRegistry   rawSpec: '',
-31 silly mapToRegistry   spec: 'latest',
-31 silly mapToRegistry   type: 'tag' }
-32 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/parcel-bundler
-33 verbose request uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/parcel-bundler
-34 verbose request no auth needed
-35 info attempt registry request try #1 at 12:47:36 PM
-36 verbose request id a814eb999b5bcae3
-37 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/parcel-bundler
-38 verbose request uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore
-39 verbose request no auth needed
-40 info attempt registry request try #1 at 12:47:36 PM
-41 verbose lastModified Tue, 30 Jun 2020 03:48:47 GMT
-42 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore
-43 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-44 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-45 info attempt registry request try #2 at 12:49:03 PM
-46 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/parcel-bundler
-47 info attempt registry request try #2 at 12:49:03 PM
-48 verbose lastModified Tue, 30 Jun 2020 03:48:47 GMT
-49 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore
-50 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-51 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-52 info attempt registry request try #3 at 12:51:20 PM
-53 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/parcel-bundler
-54 info attempt registry request try #3 at 12:51:20 PM
-55 verbose lastModified Tue, 30 Jun 2020 03:48:47 GMT
-56 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore
-57 silly fetchPackageMetaData Error: connect ETIMEDOUT 10.139.12.68:80
-57 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1026:11)
-57 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1049:20)
-57 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
-57 silly fetchPackageMetaData  error for parcel-bundler@^1.6.1 { Error: connect ETIMEDOUT 10.139.12.68:80
-57 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1026:11)
-57 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1049:20)
-57 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
-57 silly fetchPackageMetaData   code: 'ETIMEDOUT',
-57 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
-57 silly fetchPackageMetaData   syscall: 'connect',
-57 silly fetchPackageMetaData   address: '10.139.12.68',
-57 silly fetchPackageMetaData   port: 80 }
-58 silly get cb [ 304, undefined ]
-59 verbose lastModified http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore from cache
-60 verbose get saving @babel/core to /Users/priyanka.kesharwani/.npm/nexus.lab.hwinternal.net/nexus/content/groups/npm/_40babel_252fcore/.cache.json
-61 verbose correctMkdir /Users/priyanka.kesharwani/.npm correctMkdir not in flight; initializing
-62 silly resolveWithNewModule @babel/core@7.2.0 checking installable status
-63 silly cache add args [ '@babel/core@7.2.0', null ]
-64 verbose cache add spec @babel/core@7.2.0
-65 silly cache add parsed spec Result {
-65 silly cache add   raw: '@babel/core@7.2.0',
-65 silly cache add   scope: '@babel',
-65 silly cache add   escapedName: '@babel%2fcore',
-65 silly cache add   name: '@babel/core',
-65 silly cache add   rawSpec: '7.2.0',
-65 silly cache add   spec: '7.2.0',
-65 silly cache add   type: 'version' }
-66 silly addNamed @babel/core@7.2.0
-67 verbose addNamed "7.2.0" is a plain semver version for @babel/core
-68 silly mapToRegistry name @babel/core
-69 silly mapToRegistry scope (from package name) @babel
-70 verbose mapToRegistry no registry URL found in name for scope @babel
-71 silly mapToRegistry using default registry
-72 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
-73 silly mapToRegistry data Result {
-73 silly mapToRegistry   raw: '@babel/core',
-73 silly mapToRegistry   scope: '@babel',
-73 silly mapToRegistry   escapedName: '@babel%2fcore',
-73 silly mapToRegistry   name: '@babel/core',
-73 silly mapToRegistry   rawSpec: '',
-73 silly mapToRegistry   spec: 'latest',
-73 silly mapToRegistry   type: 'tag' }
-74 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore
-75 verbose addNameVersion registry:http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore not in flight; fetching
-76 verbose get http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore not expired, no request
-77 silly mapToRegistry name @babel/core
-78 silly mapToRegistry scope (from package name) @babel
-79 verbose mapToRegistry no registry URL found in name for scope @babel
-80 silly mapToRegistry using default registry
-81 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
-82 silly mapToRegistry data Result {
-82 silly mapToRegistry   raw: '@babel/core',
-82 silly mapToRegistry   scope: '@babel',
-82 silly mapToRegistry   escapedName: '@babel%2fcore',
-82 silly mapToRegistry   name: '@babel/core',
-82 silly mapToRegistry   rawSpec: '',
-82 silly mapToRegistry   spec: 'latest',
-82 silly mapToRegistry   type: 'tag' }
-83 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel%2fcore
-84 verbose addRemoteTarball http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz not in flight; adding
-85 verbose addRemoteTarball [ 'http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz',
-85 verbose addRemoteTarball   'a4dd3814901998e93340f0086e9867fefa163ada' ]
-86 info retry fetch attempt 1 at 12:52:37 PM
-87 info attempt registry request try #1 at 12:52:37 PM
-88 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-89 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-90 info attempt registry request try #2 at 12:54:04 PM
-91 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-92 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.12.68:80
-93 info attempt registry request try #3 at 12:56:20 PM
-94 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-95 error fetch failed http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-96 warn retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-97 info retry fetch attempt 2 at 12:57:47 PM
-98 info attempt registry request try #1 at 12:57:47 PM
-99 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-100 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-101 info attempt registry request try #2 at 12:59:13 PM
-102 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-103 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-104 info attempt registry request try #3 at 1:01:31 PM
-105 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-106 error fetch failed http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-107 warn retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-108 info retry fetch attempt 3 at 1:03:47 PM
-109 info attempt registry request try #1 at 1:03:47 PM
-110 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-111 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.12.68:80
-112 info attempt registry request try #2 at 1:05:13 PM
-113 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-114 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
-115 info attempt registry request try #3 at 1:07:29 PM
-116 http fetch GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-117 error fetch failed http://nexus.lab.hwinternal.net/nexus/content/groups/npm/@babel/core/-/core-7.2.0.tgz
-118 silly rollbackFailedOptional Starting
-119 silly rollbackFailedOptional Finishing
-120 silly runTopLevelLifecycles Finishing
-121 silly install printInstalled
-122 verbose stack Error: connect ETIMEDOUT 10.139.12.68:80
-122 verbose stack     at Object.exports._errnoException (util.js:1026:11)
-122 verbose stack     at exports._exceptionWithHostPort (util.js:1049:20)
-122 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
-123 verbose cwd /Users/priyanka.kesharwani/Downloads/vh2fv/hackathon2020
-124 error Darwin 19.5.0
-125 error argv "/Users/priyanka.kesharwani/.nvm/versions/node/v6.9.0/bin/node" "/Users/priyanka.kesharwani/.nvm/versions/node/v6.9.0/bin/npm" "i"
-126 error node v6.9.0
-127 error npm  v3.10.8
-128 error code ETIMEDOUT
-129 error errno ETIMEDOUT
-130 error syscall connect
-131 error network connect ETIMEDOUT 10.139.12.68:80
-132 error network This is most likely not a problem with npm itself
-132 error network and is related to network connectivity.
-132 error network In most cases you are behind a proxy or have bad network settings.
-132 error network
-132 error network If you are behind a proxy, please make sure that the
-132 error network 'proxy' config is set properly.  See: 'npm help config'
-133 verbose exit [ 1, true ]
+19 silly fetchNamedPackageData react
+20 silly mapToRegistry name react
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'react',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'react',
+23 silly mapToRegistry   name: 'react',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react
+25 silly fetchNamedPackageData react-dom
+26 silly mapToRegistry name react-dom
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'react-dom',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'react-dom',
+29 silly mapToRegistry   name: 'react-dom',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom
+31 silly fetchNamedPackageData react-qr-reader
+32 silly mapToRegistry name react-qr-reader
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'react-qr-reader',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'react-qr-reader',
+35 silly mapToRegistry   name: 'react-qr-reader',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-qr-reader
+37 silly fetchNamedPackageData react-scripts
+38 silly mapToRegistry name react-scripts
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'react-scripts',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   escapedName: 'react-scripts',
+41 silly mapToRegistry   name: 'react-scripts',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-scripts
+43 verbose request uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-qr-reader
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 1:29:43 PM
+46 verbose request id fb1874c22e9d9e50
+47 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-qr-reader
+48 verbose request uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-scripts
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 1:29:43 PM
+51 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-scripts
+52 verbose request uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom
+53 verbose request no auth needed
+54 info attempt registry request try #1 at 1:29:43 PM
+55 verbose lastModified Mon, 29 Jun 2020 08:37:26 GMT
+56 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom
+57 verbose request uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react
+58 verbose request no auth needed
+59 info attempt registry request try #1 at 1:29:43 PM
+60 verbose lastModified Tue, 30 Jun 2020 03:45:36 GMT
+61 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react
+62 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.12.68:80
+63 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.12.68:80
+64 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.12.68:80
+65 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.12.68:80
+66 info attempt registry request try #2 at 1:31:09 PM
+67 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-scripts
+68 info attempt registry request try #2 at 1:31:09 PM
+69 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-qr-reader
+70 info attempt registry request try #2 at 1:31:09 PM
+71 verbose lastModified Mon, 29 Jun 2020 08:37:26 GMT
+72 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom
+73 info attempt registry request try #2 at 1:31:09 PM
+74 verbose lastModified Tue, 30 Jun 2020 03:45:36 GMT
+75 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react
+76 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
+77 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
+78 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
+79 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.139.13.216:80
+80 info attempt registry request try #3 at 1:33:24 PM
+81 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-qr-reader
+82 info attempt registry request try #3 at 1:33:24 PM
+83 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-scripts
+84 info attempt registry request try #3 at 1:33:24 PM
+85 verbose lastModified Mon, 29 Jun 2020 08:37:26 GMT
+86 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom
+87 info attempt registry request try #3 at 1:33:24 PM
+88 verbose lastModified Tue, 30 Jun 2020 03:45:36 GMT
+89 http request GET http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react
+90 silly get cb [ 304, undefined ]
+91 verbose lastModified http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom from cache
+92 verbose get saving react-dom to /Users/priyanka.kesharwani/.npm/nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom/.cache.json
+93 verbose correctMkdir /Users/priyanka.kesharwani/.npm correctMkdir not in flight; initializing
+94 silly fetchPackageMetaData Error: connect ETIMEDOUT 10.139.12.68:80
+94 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1026:11)
+94 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1049:20)
+94 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
+94 silly fetchPackageMetaData  error for react-scripts@3.0.1 { Error: connect ETIMEDOUT 10.139.12.68:80
+94 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1026:11)
+94 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1049:20)
+94 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
+94 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+94 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+94 silly fetchPackageMetaData   syscall: 'connect',
+94 silly fetchPackageMetaData   address: '10.139.12.68',
+94 silly fetchPackageMetaData   port: 80 }
+95 silly fetchPackageMetaData Error: connect ETIMEDOUT 10.139.12.68:80
+95 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1026:11)
+95 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1049:20)
+95 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
+95 silly fetchPackageMetaData  error for react-qr-reader@2.2.1 { Error: connect ETIMEDOUT 10.139.12.68:80
+95 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1026:11)
+95 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1049:20)
+95 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
+95 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+95 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+95 silly fetchPackageMetaData   syscall: 'connect',
+95 silly fetchPackageMetaData   address: '10.139.12.68',
+95 silly fetchPackageMetaData   port: 80 }
+96 silly get cb [ 304, undefined ]
+97 verbose lastModified http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react from cache
+98 verbose get saving react to /Users/priyanka.kesharwani/.npm/nexus.lab.hwinternal.net/nexus/content/groups/npm/react/.cache.json
+99 verbose correctMkdir /Users/priyanka.kesharwani/.npm correctMkdir already in flight; waiting
+100 silly resolveWithNewModule react-dom@16.12.0 checking installable status
+101 silly cache add args [ 'react-dom@16.12.0', null ]
+102 verbose cache add spec react-dom@16.12.0
+103 silly cache add parsed spec Result {
+103 silly cache add   raw: 'react-dom@16.12.0',
+103 silly cache add   scope: null,
+103 silly cache add   escapedName: 'react-dom',
+103 silly cache add   name: 'react-dom',
+103 silly cache add   rawSpec: '16.12.0',
+103 silly cache add   spec: '16.12.0',
+103 silly cache add   type: 'version' }
+104 silly addNamed react-dom@16.12.0
+105 verbose addNamed "16.12.0" is a plain semver version for react-dom
+106 silly mapToRegistry name react-dom
+107 silly mapToRegistry using default registry
+108 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
+109 silly mapToRegistry data Result {
+109 silly mapToRegistry   raw: 'react-dom',
+109 silly mapToRegistry   scope: null,
+109 silly mapToRegistry   escapedName: 'react-dom',
+109 silly mapToRegistry   name: 'react-dom',
+109 silly mapToRegistry   rawSpec: '',
+109 silly mapToRegistry   spec: 'latest',
+109 silly mapToRegistry   type: 'tag' }
+110 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom
+111 verbose addNameVersion registry:http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom not in flight; fetching
+112 silly resolveWithNewModule react@16.12.0 checking installable status
+113 silly cache add args [ 'react@16.12.0', null ]
+114 verbose cache add spec react@16.12.0
+115 silly cache add parsed spec Result {
+115 silly cache add   raw: 'react@16.12.0',
+115 silly cache add   scope: null,
+115 silly cache add   escapedName: 'react',
+115 silly cache add   name: 'react',
+115 silly cache add   rawSpec: '16.12.0',
+115 silly cache add   spec: '16.12.0',
+115 silly cache add   type: 'version' }
+116 silly addNamed react@16.12.0
+117 verbose addNamed "16.12.0" is a plain semver version for react
+118 silly mapToRegistry name react
+119 silly mapToRegistry using default registry
+120 silly mapToRegistry registry http://nexus.lab.hwinternal.net/nexus/content/groups/npm/
+121 silly mapToRegistry data Result {
+121 silly mapToRegistry   raw: 'react',
+121 silly mapToRegistry   scope: null,
+121 silly mapToRegistry   escapedName: 'react',
+121 silly mapToRegistry   name: 'react',
+121 silly mapToRegistry   rawSpec: '',
+121 silly mapToRegistry   spec: 'latest',
+121 silly mapToRegistry   type: 'tag' }
+122 silly mapToRegistry uri http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react
+123 verbose addNameVersion registry:http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react not in flight; fetching
+124 verbose get http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react-dom not expired, no request
+125 verbose get http://nexus.lab.hwinternal.net/nexus/content/groups/npm/react not expired, no request
+126 silly cache afterAdd react-dom@16.12.0
+127 verbose afterAdd /Users/priyanka.kesharwani/.npm/react-dom/16.12.0/package/package.json not in flight; writing
+128 verbose correctMkdir /Users/priyanka.kesharwani/.npm correctMkdir not in flight; initializing
+129 silly cache afterAdd react@16.12.0
+130 verbose afterAdd /Users/priyanka.kesharwani/.npm/react/16.12.0/package/package.json not in flight; writing
+131 verbose correctMkdir /Users/priyanka.kesharwani/.npm correctMkdir not in flight; initializing
+132 verbose afterAdd /Users/priyanka.kesharwani/.npm/react-dom/16.12.0/package/package.json written
+133 verbose afterAdd /Users/priyanka.kesharwani/.npm/react/16.12.0/package/package.json written
+134 silly rollbackFailedOptional Starting
+135 silly rollbackFailedOptional Finishing
+136 silly runTopLevelLifecycles Finishing
+137 silly install printInstalled
+138 verbose stack Error: connect ETIMEDOUT 10.139.12.68:80
+138 verbose stack     at Object.exports._errnoException (util.js:1026:11)
+138 verbose stack     at exports._exceptionWithHostPort (util.js:1049:20)
+138 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1085:14)
+139 verbose cwd /Users/priyanka.kesharwani/Downloads/vh2fv/hackathon2020
+140 error Darwin 19.5.0
+141 error argv "/Users/priyanka.kesharwani/.nvm/versions/node/v6.9.0/bin/node" "/Users/priyanka.kesharwani/.nvm/versions/node/v6.9.0/bin/npm" "i"
+142 error node v6.9.0
+143 error npm  v3.10.8
+144 error code ETIMEDOUT
+145 error errno ETIMEDOUT
+146 error syscall connect
+147 error network connect ETIMEDOUT 10.139.12.68:80
+148 error network This is most likely not a problem with npm itself
+148 error network and is related to network connectivity.
+148 error network In most cases you are behind a proxy or have bad network settings.
+148 error network
+148 error network If you are behind a proxy, please make sure that the
+148 error network 'proxy' config is set properly.  See: 'npm help config'
+149 verbose exit [ 1, true ]

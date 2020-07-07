@@ -52,3 +52,48 @@
     height: 54px;
   }
 }
+
+#checkinInfo {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#checkinInfo td,
+#checkinInfo th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#checkinInfo tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#checkinInfo tr:hover {
+  background-color: #ddd;
+}
+
+#checkinInfo th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+#checkinInfo img {
+  height: 400px;
+  width: 400px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  background: red;
+  border: none;
+  border-radius: 3px;
+}
+
+button.secondary {
+  background: gray;
+}

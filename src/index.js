@@ -6,15 +6,15 @@ import App from "./App";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <div class="hw-header site-header--wrapper">
+    <div className="hw-header site-header--wrapper">
       <nav
-        class="navbar navbar-default"
+        className="navbar navbar-default"
         role="navigation"
         data-module="nav-tabs"
       >
-        <div class="container-fluid">
+        <div className="container-fluid">
           <img
-            class="hw-logo"
+            className="hw-logo"
             alt="hotwire"
             src="https://ak-secure.hotwirestatic.com/current/static/images/branding/hw-logos/hotwire-logo.svg"
           />
