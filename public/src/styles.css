@@ -17,12 +17,12 @@ h1 {
 #container {
   text-align: center;
   margin: 0;
+  display: flex;
 }
 
 #qr-canvas {
   margin: auto;
-  max-width: 400px;
-  width: 100%;
+  width: 50%;
 }
 
 #btn-scan-qr {
