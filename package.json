@@ -2,15 +2,18 @@
   "name": "vanilla",
   "version": "1.0.0",
   "description": "JavaScript example starter project",
-  "main": "public/scan-qr-code.html",
+  "main": "index.html",
   "scripts": {
-    "start": "parcel ./public/scan-qr-code.html --open",
-    "build": "parcel build ./public/scan-qr-code.html"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.2.0",
     "parcel-bundler": "^1.6.1"
   },
-  "keywords": ["javascript", "starter"]
+  "keywords": [
+    "javascript",
+    "starter"
+  ]
 }
