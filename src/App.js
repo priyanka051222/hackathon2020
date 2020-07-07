@@ -78,7 +78,7 @@ export default function App() {
           delay={300}
           onError={handleError}
           onScan={handleScan}
-          style={{ width: "100%" }}
+          style={{ width: "320px", margin: "auto" }}
         />
       </React.Fragment>
     );
